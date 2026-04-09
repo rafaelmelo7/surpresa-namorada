@@ -27,10 +27,13 @@
     }
     img {
       width: 100%;
-      max-height: 420px;
-      object-fit: cover;
+      max-height: none;
+      height: auto;
+      object-fit: contain;
       border-radius: 16px;
       margin-bottom: 20px;
+      display: block;
+      background: #f7eef1;
     }
     h1 {
       font-size: 2rem;
@@ -88,19 +91,22 @@
       <span class="highlight">eu gosto de você de verdade</span>.
     </p>
 
-    <button class="btn" onclick="mostrarMensagem()">Clica aqui 💌</button>
+    <button class="btn" onclick="iniciarSurpresa()">Clica aqui 💌</button>
 
     <p id="final" class="final"></p>
 
   </div>
 
   <!-- MÚSICA (você pode trocar o link depois) -->
-  <audio autoplay loop>
+  <audio id="musica" loop controls style="margin-top: 18px; width: 100%; max-width: 360px;">
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
   </audio>
 
   <script>
-    function mostrarMensagem() {
+    function iniciarSurpresa() {
+      const audio = document.getElementById('musica');
+      audio.play().catch(() => {});
       document.getElementById('final').innerText = "Com carinho, alguém que pensa em você mais do que deveria… ✨";
     }
   </script>

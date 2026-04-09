@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Yasmin ❤️</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #fff5f7, #ffe3ec);
+      color: #4a1f2c;
+      padding: 24px;
+    }
+    .card {
+      max-width: 700px;
+      background: rgba(255,255,255,0.95);
+      border-radius: 24px;
+      padding: 32px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+    }
+    img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+    .highlight {
+      color: #b03060;
+      font-weight: bold;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      background: #b03060;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .final {
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <!-- FOTO DELA -->
+    <img src="Yasmin.jpeg" alt="Yasmin" />
+
+    <h1>Para você, Yasmin ❤️</h1>
+
+    <p>
+      Eu poderia escrever muitas coisas… mas a verdade é simples:
+      <span class="highlight">você é especial de um jeito que não se explica fácil</span>.
+    </p>
+
+    <p>
+      Tem algo no seu olhar, no seu jeito… que prende atenção, que acalma e ao mesmo tempo desperta algo bom.
+      E quanto mais eu te conheço, mais percebo que não é só beleza — é presença, é energia, é quem você é.
+    </p>
+
+    <p>
+      No meio da rotina, das coisas do dia a dia… você aparece como um ponto fora da curva.
+      E é por isso que eu quis fazer algo diferente.
+    </p>
+
+    <p>
+      Só pra te lembrar que
+      <span class="highlight">eu gosto de você de verdade</span>.
+    </p>
+
+    <button class="btn" onclick="mostrarMensagem()">Clica aqui 💌</button>
+
+    <p id="final" class="final"></p>
+
+  </div>
+
+  <!-- MÚSICA (você pode trocar o link depois) -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('final').innerText = "Com carinho, alguém que pensa em você mais do que deveria… ✨";
+    }
+  </script>
+
+</body>
+</html>
